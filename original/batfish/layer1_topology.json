@@ -1,0 +1,184 @@
+{
+  "edges": [
+    {
+      "node1": {
+        "hostname": "RT1",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "SW1",
+        "interfaceName": "Ethernet2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SW1",
+        "interfaceName": "Ethernet2"
+      },
+      "node2": {
+        "hostname": "RT1",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "RT1",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "RT2",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "RT2",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "RT1",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "RT1",
+        "interfaceName": "eth3"
+      },
+      "node2": {
+        "hostname": "RT3",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "RT3",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "RT1",
+        "interfaceName": "eth3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "RT3",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "SW2",
+        "interfaceName": "Ethernet2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SW2",
+        "interfaceName": "Ethernet2"
+      },
+      "node2": {
+        "hostname": "RT3",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SW2",
+        "interfaceName": "Ethernet1"
+      },
+      "node2": {
+        "hostname": "RT2",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "RT2",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "SW2",
+        "interfaceName": "Ethernet1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SW2",
+        "interfaceName": "Ethernet3"
+      },
+      "node2": {
+        "hostname": "RT4",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "RT4",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "SW2",
+        "interfaceName": "Ethernet3"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "RT4",
+        "interfaceName": "eth2"
+      },
+      "node2": {
+        "hostname": "SW3",
+        "interfaceName": "Ethernet1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SW3",
+        "interfaceName": "Ethernet1"
+      },
+      "node2": {
+        "hostname": "RT4",
+        "interfaceName": "eth2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SW3",
+        "interfaceName": "Ethernet2"
+      },
+      "node2": {
+        "hostname": "SERV2",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SERV2",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "SW3",
+        "interfaceName": "Ethernet2"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SW1",
+        "interfaceName": "Ethernet1"
+      },
+      "node2": {
+        "hostname": "SERV1",
+        "interfaceName": "eth1"
+      }
+    },
+    {
+      "node1": {
+        "hostname": "SERV1",
+        "interfaceName": "eth1"
+      },
+      "node2": {
+        "hostname": "SW1",
+        "interfaceName": "Ethernet1"
+      }
+    }
+  ]
+}
