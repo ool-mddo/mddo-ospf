@@ -49,6 +49,7 @@ interfaces {
                 address 192.168.0.2/30;
             }
         }
+    }
     ge-0/0/1 {
         description to_RegionA-Svr02_ens2;
         unit 0 {
