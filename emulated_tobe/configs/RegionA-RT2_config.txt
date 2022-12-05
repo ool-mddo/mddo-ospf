@@ -1,7 +1,8 @@
-## Last commit: 2022-11-18 08:42:22 UTC by root
-version 20220304.042022_builder.r1243823;
+show configuration 
+## Last commit: 2022-12-04 09:29:06 UTC by vrnetlab
+version 18.1R1.9;
 system {
-    host-name regionc-svr01;
+    host-name RegionA-RT2;
     root-authentication {
         encrypted-password "$6$vOte4zs5$j1X3fElYvJSt8VPNXx2KzRNrZIkp9CeRX83/W4wQo5K4Tl/MHZeMcvbymEzm9/2ya3S4hU993YDSLY26ROGnW/"; ## SECRET-DATA
     }
@@ -20,41 +21,53 @@ system {
             ssh;
         }
     }
-    ##
-    ## Warning: configuration block ignored: unsupported platform (crpd)
-    ##
     syslog {
         user * {
             any emergency;
-        }
-        file interactive-commands {
-            interactive-commands any;
         }
         file messages {
             any notice;
             authorization info;
         }
+        file interactive-commands {
+            interactive-commands any;
+        }
     }
 }
-##
-## Warning: statement ignored: unsupported platform (crpd)
-##
-chassis;
+chassis {
+    fpc 0 {
+        pic 0 {
+            number-of-ports 96;
+        }
+    }
+}
 interfaces {
-    /*ens2*/
-    eth1 {
-        description to_Seg-192.168.100.0-25_Ethernet2;
+    ge-0/0/0 {
+        description to_RegionA-RT1_ge-0/0/0;
         unit 0 {
             family inet {
-                address 192.168.100.10/25;
+                address 192.168.0.2/30;
+            }
+        }
+    }
+    ge-0/0/1 {
+        description to_RegionA-Svr02_ens2;
+        unit 0 {
+            family inet {
+                address 192.168.100.1/24;
+            }
+        }
+    }
+    fxp0 {
+        unit 0 {
+            family inet {
+                address 10.0.0.15/24;
             }
         }
     }
 }
 routing-options {
-    rib inet.0 {
-        static {
-            route 0.0.0.0/0 next-hop 192.168.100.1;
-        }
+    static {
+        route 0.0.0.0/0 next-hop 192.168.0.1;
     }
 }
