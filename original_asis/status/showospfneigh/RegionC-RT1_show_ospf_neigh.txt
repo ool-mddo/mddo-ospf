@@ -1,0 +1,12 @@
+* Indicates MADJ interface
+# Indicates Neighbor awaiting BFD session up
+
+Neighbors for OSPF 65000
+
+Neighbor ID     Pri   State           Dead Time   Address         Interface
+10.10.10.10     128   FULL/BDR        00:00:35    172.16.1.1      GigabitEthernet0/0/0/1
+    Neighbor is up for 6w1d
+1.1.1.1         1     FULL/BDR        00:00:38    172.16.2.1      GigabitEthernet0/0/0/2
+    Neighbor is up for 6w2d
+
+Total neighbor count: 2
